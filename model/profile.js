@@ -1,3 +1,4 @@
+const { route } = require('express/lib/application');
 const mongoose = require('mongoose');
 
 const ProfileSchema = new mongoose.Schema({
@@ -23,7 +24,7 @@ const ProfileSchema = new mongoose.Schema({
         required: true
     },
     bio:{
-        type: String,
+      type: String,
     },
     gitid: {
         type: String
